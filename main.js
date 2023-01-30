@@ -1,11 +1,14 @@
+let currCount = 0
 function buttonClicked() {
 	console.log("Button was clicked");
 
-	let newText = "Number of times button clicked: ";
-	let counter = 0;
 	//select element we want to modify
+	let count = document.getElementById("count");
 
-	let	buttonDiv = document.getElementById("button-div");
+	let buttonDiv = document.getElementById("button-div");
+
+	currCount += 1;
 	
-	buttonDiv.innerHTML = newText.concat(counter);
+	count.innerHTML = currCount;
+	
 }
